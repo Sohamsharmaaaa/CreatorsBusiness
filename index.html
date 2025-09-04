@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreatorsBusiness - Connecting Brands with Influencers, Smarter.</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Custom Styles & Color Palette -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0A23;
+            color: #FFFFFF;
+        }
+        .gradient-bg {
+            background-image: linear-gradient(180deg, #0A0A23 0%, #1A1A40 100%);
+        }
+        .accent-bg {
+            background-color: #1A1A40;
+        }
+        .cta-button {
+            background-color: #00D1FF;
+            color: #0A0A23;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 8px 25px rgba(0, 209, 255, 0.3);
+        }
+        .outline-button {
+            border-color: #00D1FF;
+            color: #00D1FF;
+            transition: all 0.3s ease;
+        }
+        .outline-button:hover {
+            background-color: rgba(0, 209, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(26, 26, 64, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .flow-line::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, #00D1FF, rgba(0, 209, 255, 0));
+            opacity: 0.5;
+        }
+
+        /* Animation class */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="w-full overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <!-- LOGO UPDATED: Replace the 'src' attribute with the path to your logo image -->
+                <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-8 w-8 ">
+                <span class="text-xl font-bold">CreatorsBusiness</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#why-us" class="hover:text-[#00D1FF] transition-colors">Why Us</a>
+                <a href="#how-it-works" class="hover:text-[#00D1FF] transition-colors">How It Works</a>
+                <a href="#for-creators" class="hover:text-[#00D1FF] transition-colors">For Influencers</a>
+                <a href="#for-brands" class="hover:text-[#00D1FF] transition-colors">For Brands</a>
+            </nav>
+            <a href="#join-now" class="hidden md:block cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden accent-bg">
+            <a href="#why-us" class="block py-2 px-6 hover:bg-gray-700">Why Us</a>
+            <a href="#how-it-works" class="block py-2 px-6 hover:bg-gray-700">How It Works</a>
+            <a href="#for-creators" class="block py-2 px-6 hover:bg-gray-700">For Influencers</a>
+            <a href="#for-brands" class="block py-2 px-6 hover:bg-gray-700">For Brands</a>
+            <div class="p-4">
+                 <a href="#join-now" class="block text-center cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center gradient-bg pt-20">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto reveal">
+                    <div class="flex justify-center items-center space-x-4 mb-6">
+                        <!-- LOGO UPDATED: Replace the 'src' attribute with the path to your logo image -->
+                        <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-20 w-20 ">
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Connecting Brands with Influencers, <span class="text-[#00D1FF]">Smarter.</span></h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8">
+                        We bridge the gap between innovative brands and authentic creators through a transparent, commission-based model.
+                    </p>
+                    <div class="flex justify-center items-center space-x-4">
+                        <a href="#for-brands" class="cta-button font-semibold py-3 px-8 rounded-lg">I'm a Brand</a>
+                        <a href="#for-creators" class="outline-button font-semibold py-3 px-8 rounded-lg border-2">I'm an Influencer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="py-20 accent-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold">Why Choose CreatorsBusiness?</h2>
+                    <p class="text-gray-300 mt-2">We prioritize trust, transparency, and results.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="glass-card p-8 rounded-xl text-center reveal" style="transition-delay: 100ms;">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-[#0A0A23] p-4 rounded-full">
+                                <i data-lucide="verified" class="w-8 h-8 text-[#00D1FF]"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Verified Influencers</h3>
+                        <p class="text-gray-400">Every creator in our network is vetted for authenticity and engagement.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="glass-card p-8 rounded-xl text-center reveal" style="transition-delay: 200ms;">
+                         <div class="flex justify-center mb-4">
+                            <div class="bg-[#0A0A23] p-4 rounded-full">
+                                <i data-lucide="percent-circle" class="w-8 h-8 text-[#00D1FF]"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Commission Model</h3>
+                        <p class="text-gray-400">We only succeed when you do. A fair, performance-based partnership.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="glass-card p-8 rounded-xl text-center reveal" style="transition-delay: 300ms;">
+                         <div class="flex justify-center mb-4">
+                            <div class="bg-[#0A0A23] p-4 rounded-full">
+                                <i data-lucide="shield-off" class="w-8 h-8 text-[#00D1FF]"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">No Hidden Fees</h3>
+                        <p class="text-gray-400">Complete transparency in all our dealings. What you see is what you get.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="glass-card p-8 rounded-xl text-center reveal" style="transition-delay: 400ms;">
+                         <div class="flex justify-center mb-4">
+                            <div class="bg-[#0A0A23] p-4 rounded-full">
+                                <i data-lucide="rocket" class="w-8 h-8 text-[#00D1FF]"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Easy Process</h3>
+                        <p class="text-gray-400">A streamlined workflow from campaign creation to final payout.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-20 gradient-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold">A Simple Path to Success</h2>
+                    <p class="text-gray-300 mt-2">Our 3-step process makes collaboration effortless.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 md:gap-16 text-center relative">
+                    <!-- Step 1 -->
+                    <div class="relative reveal" style="transition-delay: 100ms;">
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-24 h-24 rounded-full border-2 border-[#00D1FF] flex items-center justify-center bg-[#1A1A40] mb-4">
+                               <i data-lucide="store" class="w-12 h-12 text-[#00D1FF]"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Brands Submit</h3>
+                            <p class="text-gray-400 px-4">Brands register and submit their campaign goals and requirements through a simple form.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="relative reveal" style="transition-delay: 300ms;">
+                        <div class="relative z-10 flex flex-col items-center">
+                            <div class="w-24 h-24 rounded-full border-2 border-[#00D1FF] flex items-center justify-center bg-[#1A1A40] mb-4">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#00D1FF]">
+                                    <path d="M16.62,12A4.62,4.62,0,1,1,12,7.38,4.62,4.62,0,0,1,16.62,12Z" stroke="#00D1FF" stroke-width="1.5"/>
+                                    <path d="M12,16.62A4.62,4.62,0,1,1,7.38,12,4.62,4.62,0,0,1,12,16.62Z" stroke="#FFFFFF" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">We Connect</h3>
+                            <p class="text-gray-400 px-4">Our team matches the campaign with the perfect, pre-vetted influencers from our network.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative reveal" style="transition-delay: 500ms;">
+                        <div class="flex flex-col items-center">
+                             <div class="w-24 h-24 rounded-full border-2 border-[#00D1FF] flex items-center justify-center bg-[#1A1A40] mb-4">
+                               <i data-lucide="users" class="w-12 h-12 text-[#00D1FF]"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Influencers Create</h3>
+                            <p class="text-gray-400 px-4">Influencers create and publish authentic content, driving real engagement and results.</p>
+                        </div>
+                    </div>
+                     <!-- Animated Dashed Line for Desktop -->
+                    <div class="hidden md:block absolute top-12 left-0 w-full h-px">
+                        <svg width="100%" height="100%" class="absolute top-0 left-0">
+                            <line x1="20%" y1="0" x2="80%" y2="0" stroke="#00D1FF" stroke-width="2" stroke-dasharray="8 8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Influencers / For Brands -->
+        <section class="accent-bg">
+            <div class="grid md:grid-cols-2">
+                <!-- For Brands -->
+                <div id="for-brands" class="p-12 md:p-20 flex flex-col justify-center items-start text-left reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">For Brands</h2>
+                    <p class="text-gray-300 mb-8 max-w-lg">
+                        Ready to scale your reach with authentic creators? Access our network of vetted influencers and launch your campaign in minutes. Drive measurable results with performance-based marketing.
+                    </p>
+                    <a href="https://forms.gle/B33cm9NyWqYTg1MaA" class="cta-button font-semibold py-3 px-8 rounded-lg flex items-center space-x-2">
+                        <span>Register Your Brand</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <!-- For Influencers -->
+                <div id="for-creators" class="p-12 md:p-20 flex flex-col justify-center items-start text-left bg-[#0A0A23] reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">For Influencers</h2>
+                    <p class="text-gray-300 mb-8 max-w-lg">
+                        Monetize your content by collaborating with exciting brands. Get access to exclusive campaigns, fair compensation, and a supportive community. It's free to join.
+                    </p>
+                    <a href="https://forms.gle/gqvSnXukbgpE5vDf9" class="outline-button font-semibold py-3 px-8 rounded-lg border-2 flex items-center space-x-2">
+                        <span>Join Our Network</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="py-16 gradient-bg">
+            <div class="container mx-auto px-6 reveal">
+                <h3 class="text-center text-xl text-gray-400 font-medium mb-8">Trusted by innovative brands worldwide</h3>
+                <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
+                    <!-- Placeholder Logos -->
+                    <div class="text-gray-500 font-bold text-2xl opacity-60">BRAND LOGO 1</div>
+                    <div class="text-gray-500 font-bold text-2xl opacity-60">BRAND LOGO 2</div>
+                    <div class="text-gray-500 font-bold text-2xl opacity-60">BRAND LOGO 3</div>
+                    <div class="text-gray-500 font-bold text-2xl opacity-60">BRAND LOGO 4</div>
+                    <div class="text-gray-500 font-bold text-2xl opacity-60">BRAND LOGO 5</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="join-now" class="py-20 accent-bg">
+             <div class="container mx-auto px-6 text-center reveal">
+                 <h2 class="text-3xl md:text-4xl font-bold max-w-2xl mx-auto">Ready to Grow Together?</h2>
+                 <p class="text-gray-300 mt-4 mb-8 max-w-lg mx-auto">
+                     Join CreatorsBusiness today. Registration is free and takes just a few minutes.
+                 </p>
+                 <div class="flex justify-center items-center space-x-4">
+                        <a href="https://forms.gle/B33cm9NyWqYTg1MaA" class="cta-button font-semibold py-3 px-8 rounded-lg">Register as a Brand</a>
+                        <a href="https://forms.gle/gqvSnXukbgpE5vDf9" class="outline-button font-semibold py-3 px-8 rounded-lg border-2">Register as an Influencer</a>
+                    </div>
+             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0A23] py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <!-- LOGO UPDATED: Replace the 'src' attribute with the path to your logo image -->
+                        <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-6 w-6 rounded-full">
+                        <span class="text-lg font-bold">CreatorsBusiness</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Connecting brands with influencers, smarter.</p>
+                </div>
+                <div class="grid grid-cols-2 md:col-span-2 gap-8">
+                     <div>
+                        <h4 class="font-semibold mb-3">Company</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="about.html" class="hover:text-[#00D1FF]">About Us</a></li>
+                            <li><a href="contact.html" class="hover:text-[#00D1FF]">Contact</a></li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold mb-3">Legal</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li><a href="terms.html" class="hover:text-[#00D1FF]">Terms of Service</a></li>
+                            <li><a href="privacy.html" class="hover:text-[#00D1FF]">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                 <p class="text-gray-500 text-sm">&copy; 2025 CreatorsBusiness. All Rights Reserved.</p>
+                 <div class="flex space-x-4 mt-4 md:mt-0">
+                     <a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="send" class="w-5 h-5"></i><span class="sr-only">Telegram</span></a>
+                     <a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="message-circle" class="w-5 h-5"></i><span class="sr-only">WhatsApp</span></a>
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.onscroll = function () {
+            if (window.scrollY > 50) {
+                navbar.classList.add("accent-bg", "shadow-lg");
+            } else {
+                navbar.classList.remove("accent-bg", "shadow-lg");
+            }
+        };
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple on-scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
+
+    </script>
+</body>
+</html>
+
