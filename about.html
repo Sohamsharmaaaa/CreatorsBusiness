@@ -1,81 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | CreatorsBusiness</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0A0A23; color: #FFFFFF; }
-        .gradient-bg { background-image: linear-gradient(180deg, #0A0A23 0%, #1A1A40 100%); }
-        .accent-bg { background-color: #1A1A40; }
-        .cta-button { background-color: #00D1FF; color: #0A0A23; transition: all 0.3s ease; }
-        .cta-button:hover { transform: translateY(-2px); box-shadow: 0px 8px 25px rgba(0, 209, 255, 0.3); }
-        .nav-link.active { color: #00D1FF; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | CreatorsBusiness</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <meta name="description" content="Learn more about CreatorsBusiness – our mission, vision, and story. We connect brands with influencers through transparency, trust, and results-driven campaigns.">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0A0A23; color: #FFFFFF; }
+    .gradient-bg { background-image: linear-gradient(180deg, #0A0A23 0%, #1A1A40 100%); }
+    .accent-bg { background-color: #1A1A40; }
+    .cta-button { background-color: #00D1FF; color: #0A0A23; transition: all 0.3s ease; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0px 8px 25px rgba(0, 209, 255, 0.3); }
+    .nav-link.active { color: #00D1FF; }
+    /* Smooth dropdown for mobile */
+    #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; }
+    #mobile-menu.open { max-height: 300px; }
+  </style>
 </head>
 <body class="w-full overflow-x-hidden">
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 accent-bg shadow-lg" id="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-2">
-                <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-8 w-8 rounded-full">
-                <span class="text-xl font-bold">CreatorsBusiness</span>
-            </a>
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="index.html#why-us" class="nav-link hover:text-[#00D1FF] transition-colors">Why Us</a>
-                <a href="index.html#how-it-works" class="nav-link hover:text-[#00D1FF] transition-colors">How It Works</a>
-            </nav>
-            <a href="index.html#join-now" class="hidden md:block cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a>
-            <button id="mobile-menu-button" class="md:hidden"><i data-lucide="menu" class="w-6 h-6"></i></button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden accent-bg">
-            <a href="index.html#why-us" class="block py-2 px-6 hover:bg-gray-700">Why Us</a>
-            <a href="index.html#how-it-works" class="block py-2 px-6 hover:bg-gray-700">How It Works</a>
-            <div class="p-4"><a href="index.html#join-now" class="block text-center cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a></div>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 accent-bg shadow-lg" id="navbar">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-8 w-8 rounded-full">
+        <span class="text-xl font-bold">CreatorsBusiness</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="index.html#why-us" class="nav-link hover:text-[#00D1FF] transition-colors">Why Us</a>
+        <a href="index.html#how-it-works" class="nav-link hover:text-[#00D1FF] transition-colors">How It Works</a>
+        <a href="about.html" class="nav-link active font-semibold">About Us</a>
+      </nav>
+      <a href="index.html#join-now" class="hidden md:block cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a>
+      <button id="mobile-menu-button" class="md:hidden"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+    <div id="mobile-menu" class="md:hidden accent-bg">
+      <a href="index.html#why-us" class="block py-3 px-6 hover:bg-gray-700">Why Us</a>
+      <a href="index.html#how-it-works" class="block py-3 px-6 hover:bg-gray-700">How It Works</a>
+      <a href="about.html" class="block py-3 px-6 bg-gray-800 text-[#00D1FF]">About Us</a>
+      <div class="p-4"><a href="index.html#join-now" class="block text-center cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a></div>
+    </div>
+  </header>
 
-    <main>
-        <!-- About Us Section -->
-        <section id="about-us" class="py-20 gradient-bg pt-32">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">About CreatorsBusiness</h1>
-                    <p class="text-lg text-gray-300 mb-12">Our Mission is to democratize the creator economy by building transparent, effective, and scalable connections between brands and influencers.</p>
-                    <div class="text-left space-y-6 text-gray-400 bg-gray-900/20 p-8 rounded-lg">
-                        <p>CreatorsBusiness was founded on a simple principle: influencer marketing should be accessible and results-driven for everyone. We saw a gap in the market for a platform that prioritizes authenticity and operates on a performance-based model, ensuring that brands only pay for tangible results and creators are compensated fairly for their influence.</p>
-                        <p>Our team is composed of digital marketing veterans, social media experts, and technology enthusiasts who are passionate about empowering both sides of the partnership. We leverage data and human expertise to make the perfect match, fostering collaborations that are not only successful but also genuine.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-[#0A0A23] py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="md:col-span-1"><div class="flex items-center space-x-2 mb-4"><img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-6 w-6 rounded-full"><span class="text-lg font-bold">CreatorsBusiness</span></div><p class="text-gray-400 text-sm">Connecting brands with influencers, smarter.</p></div>
-                <div class="grid grid-cols-2 md:col-span-2 gap-8">
-                     <div><h4 class="font-semibold mb-3">Company</h4><ul class="space-y-2 text-gray-400"><li><a href="about.html" class="hover:text-[#00D1FF] text-[#00D1FF]">About Us</a></li><li><a href="contact.html" class="hover:text-[#00D1FF]">Contact</a></li></ul></div>
-                     <div><h4 class="font-semibold mb-3">Legal</h4><ul class="space-y-2 text-gray-400"><li><a href="terms.html" class="hover:text-[#00D1FF]">Terms of Service</a></li><li><a href="privacy.html" class="hover:text-[#00D1FF]">Privacy Policy</a></li></ul></div>
-                </div>
-            </div>
-            <div class="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"><p class="text-gray-500 text-sm">&copy; 2025 CreatorsBusiness. All Rights Reserved.</p><div class="flex space-x-4 mt-4 md:mt-0"><a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="send" class="w-5 h-5"></i><span class="sr-only">Telegram</span></a><a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="message-circle" class="w-5 h-5"></i><span class="sr-only">WhatsApp</span></a></div></div>
+  <main>
+    <!-- About Us Section -->
+    <section id="about-us" class="py-20 gradient-bg pt-32">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">About CreatorsBusiness</h1>
+          <p class="text-lg text-gray-300 mb-12">Our mission is to democratize the creator economy by building transparent, effective, and scalable connections between brands and influencers.</p>
         </div>
-    </footer>
 
-    <script>
-        lucide.createIcons();
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
-    </script>
+        <!-- Story and Mission -->
+        <div class="text-left space-y-6 text-gray-400 bg-gray-900/20 p-8 rounded-lg max-w-4xl mx-auto">
+          <h2 class="text-2xl font-semibold text-white">Our Story</h2>
+          <p>CreatorsBusiness was founded on a simple principle: influencer marketing should be accessible and results-driven. We identified a gap for a platform that prioritizes authenticity and ensures brands only pay for real results, while creators are rewarded fairly for their influence.</p>
+
+          <h2 class="text-2xl font-semibold text-white">Our Mission</h2>
+          <p>We aim to create a transparent ecosystem where brands and influencers collaborate seamlessly. By combining technology with human expertise, we ensure every partnership delivers value to both sides.</p>
+
+          <h2 class="text-2xl font-semibold text-white">Our Vision</h2>
+          <p>To become the most trusted global platform where brands and creators co-create impactful, measurable campaigns.</p>
+
+          <h2 class="text-2xl font-semibold text-white">Our Team</h2>
+          <p>Our team includes digital marketers, social media strategists, and technology innovators passionate about empowering creators and helping brands grow. Together, we bring decades of combined expertise in influencer marketing and campaign optimization.</p>
+
+          <h2 class="text-2xl font-semibold text-white">Why Choose Us?</h2>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Performance-based campaigns — pay only for results</li>
+            <li>Fair compensation and opportunities for influencers</li>
+            <li>Data-driven insights combined with human expertise</li>
+            <li>Seamless collaboration tools for efficiency</li>
+            <li>Trusted by brands and creators worldwide</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#0A0A23] py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-1">
+          <div class="flex items-center space-x-2 mb-4">
+            <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-6 w-6 rounded-full">
+            <span class="text-lg font-bold">CreatorsBusiness</span>
+          </div>
+          <p class="text-gray-400 text-sm">Connecting brands with influencers, smarter.</p>
+        </div>
+        <div class="grid grid-cols-2 md:col-span-2 gap-8">
+          <div>
+            <h4 class="font-semibold mb-3">Company</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="about.html" class="hover:text-[#00D1FF] text-[#00D1FF]">About Us</a></li>
+              <li><a href="contact.html" class="hover:text-[#00D1FF]">Contact</a></li>
+              <!-- <li><a href="faq.html" class="hover:text-[#00D1FF]">FAQ</a></li> -->
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Legal</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="terms.html" class="hover:text-[#00D1FF]">Terms of Service</a></li>
+              <li><a href="privacy.html" class="hover:text-[#00D1FF]">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 text-sm">&copy; 2025 CreatorsBusiness. All Rights Reserved.</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="send" class="w-5 h-5"></i><span class="sr-only">Telegram</span></a>
+          <a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="message-circle" class="w-5 h-5"></i><span class="sr-only">WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
