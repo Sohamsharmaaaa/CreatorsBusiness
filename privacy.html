@@ -1,83 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | CreatorsBusiness</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0A0A23; color: #FFFFFF; }
-        .accent-bg { background-color: #1A1A40; }
-        .cta-button { background-color: #00D1FF; color: #0A0A23; transition: all 0.3s ease; }
-        .cta-button:hover { transform: translateY(-2px); box-shadow: 0px 8px 25px rgba(0, 209, 255, 0.3); }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | CreatorsBusiness</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #0A0A23; color: #FFFFFF; }
+    .accent-bg { background-color: #1A1A40; }
+    .cta-button { background-color: #00D1FF; color: #0A0A23; transition: all 0.3s ease; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0px 8px 25px rgba(0, 209, 255, 0.3); }
+  </style>
 </head>
-<body class="w-full overflow-x-hidden">
+<body class="w-full overflow-x-hidden text-sm md:text-base">
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 accent-bg shadow-lg" id="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-2">
-                <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-8 w-8 rounded-full">
-                <span class="text-xl font-bold">CreatorsBusiness</span>
-            </a>
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="index.html#why-us" class="hover:text-[#00D1FF] transition-colors">Why Us</a>
-                <a href="index.html#how-it-works" class="hover:text-[#00D1FF] transition-colors">How It Works</a>
-            </nav>
-            <a href="index.html#join-now" class="hidden md:block cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a>
-            <button id="mobile-menu-button" class="md:hidden"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 accent-bg shadow-lg" id="navbar">
+    <div class="container mx-auto px-4 md:px-6 py-3 md:py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-7 w-7 md:h-8 md:w-8 rounded-full">
+        <span class="text-lg md:text-xl font-bold">CreatorsBusiness</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-6 md:space-x-8">
+        <a href="index.html#why-us" class="hover:text-[#00D1FF] transition-colors">Why Us</a>
+        <a href="index.html#how-it-works" class="hover:text-[#00D1FF] transition-colors">How It Works</a>
+      </nav>
+      <a href="index.html#join-now" class="hidden md:block cta-button font-semibold py-2 px-4 md:px-5 rounded-lg text-sm md:text-base">Join Now</a>
+      <button id="mobile-menu-button" class="md:hidden"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden accent-bg">
+      <a href="index.html#why-us" class="block py-2 px-6 hover:bg-gray-700">Why Us</a>
+      <a href="index.html#how-it-works" class="block py-2 px-6 hover:bg-gray-700">How It Works</a>
+      <div class="p-4"><a href="index.html#join-now" class="block text-center cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Privacy Policy Section -->
+    <section id="privacy" class="py-16 md:py-20 accent-bg pt-28 md:pt-32">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-8">Privacy Policy</h1>
+          <div class="text-gray-400 space-y-6 prose prose-invert max-w-none bg-gray-900/20 p-4 md:p-8 rounded-lg">
+            <p class="text-xs md:text-sm">Last Updated: September 4, 2025</p>
+
+            <h3 class="font-semibold text-white text-lg md:text-xl pt-4">1. Information We Collect</h3>
+            <p>We collect information you provide directly to us, such as when you create an account, fill out a form, or communicate with us. This may include your name, email address, social media profiles, and payment information.</p>
+
+            <h3 class="font-semibold text-white text-lg md:text-xl pt-4">2. How We Use Your Information</h3>
+            <p>We use the information we collect to operate, maintain, and provide our services, including matching brands with influencers, processing transactions, and communicating with you.</p>
+
+            <h3 class="font-semibold text-white text-lg md:text-xl pt-4">3. Data Security</h3>
+            <p>We implement reasonable security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no internet-based service is 100% secure, so we cannot guarantee absolute security.</p>
+          </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden accent-bg">
-            <a href="index.html#why-us" class="block py-2 px-6 hover:bg-gray-700">Why Us</a>
-            <a href="index.html#how-it-works" class="block py-2 px-6 hover:bg-gray-700">How It Works</a>
-            <div class="p-4"><a href="index.html#join-now" class="block text-center cta-button font-semibold py-2 px-5 rounded-lg">Join Now</a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#0A0A23] py-10 md:py-12 text-sm md:text-base">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div class="md:col-span-1">
+          <div class="flex items-center space-x-2 mb-3 md:mb-4">
+            <img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-6 w-6 rounded-full">
+            <span class="text-base md:text-lg font-bold">CreatorsBusiness</span>
+          </div>
+          <p class="text-gray-400 text-xs md:text-sm">Connecting brands with influencers, smarter.</p>
         </div>
-    </header>
-
-    <main>
-        <!-- Privacy Policy Section -->
-        <section id="privacy" class="py-20 accent-bg pt-32">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">Privacy Policy</h1>
-                    <div class="text-gray-400 space-y-6 prose prose-invert max-w-none bg-gray-900/20 p-8 rounded-lg">
-                        <p class="text-sm">Last Updated: September 4, 2025</p>
-                        <h3 class="font-semibold text-white text-xl pt-4">1. Information We Collect</h3>
-                        <p>We collect information you provide directly to us, such as when you create an account, fill out a form, or communicate with us. This may include your name, email address, social media profiles, and payment information.</p>
-                        <h3 class="font-semibold text-white text-xl pt-4">2. How We Use Your Information</h3>
-                        <p>We use the information we collect to operate, maintain, and provide our services, including matching brands with influencers, processing transactions, and communicating with you.</p>
-                        <h3 class="font-semibold text-white text-xl pt-4">3. Data Security</h3>
-                        <p>We implement reasonable security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no internet-based service is 100% secure, so we cannot guarantee absolute security.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-[#0A0A23] py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="md:col-span-1"><div class="flex items-center space-x-2 mb-4"><img src="Logo2_12.png" alt="CreatorsBusiness Logo" class="h-6 w-6 rounded-full"><span class="text-lg font-bold">CreatorsBusiness</span></div><p class="text-gray-400 text-sm">Connecting brands with influencers, smarter.</p></div>
-                <div class="grid grid-cols-2 md:col-span-2 gap-8">
-                     <div><h4 class="font-semibold mb-3">Company</h4><ul class="space-y-2 text-gray-400"><li><a href="about.html" class="hover:text-[#00D1FF]">About Us</a></li><li><a href="contact.html" class="hover:text-[#00D1FF]">Contact</a></li></ul></div>
-                     <div><h4 class="font-semibold mb-3">Legal</h4><ul class="space-y-2 text-gray-400"><li><a href="terms.html" class="hover:text-[#00D1FF]">Terms of Service</a></li><li><a href="privacy.html" class="hover:text-[#00D1FF] text-[#00D1FF]">Privacy Policy</a></li></ul></div>
-                </div>
-            </div>
-            <div class="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"><p class="text-gray-500 text-sm">&copy; 2025 CreatorsBusiness. All Rights Reserved.</p><div class="flex space-x-4 mt-4 md:mt-0"><a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="send" class="w-5 h-5"></i><span class="sr-only">Telegram</span></a><a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="message-circle" class="w-5 h-5"></i><span class="sr-only">WhatsApp</span></a></div></div>
+        <div class="grid grid-cols-2 md:col-span-2 gap-6 md:gap-8">
+          <div>
+            <h4 class="font-semibold mb-2 md:mb-3">Company</h4>
+            <ul class="space-y-1 md:space-y-2 text-gray-400">
+              <li><a href="about.html" class="hover:text-[#00D1FF]">About Us</a></li>
+              <li><a href="contact.html" class="hover:text-[#00D1FF]">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2 md:mb-3">Legal</h4>
+            <ul class="space-y-1 md:space-y-2 text-gray-400">
+              <li><a href="terms.html" class="hover:text-[#00D1FF]">Terms of Service</a></li>
+              <li><a href="privacy.html" class="hover:text-[#00D1FF] text-[#00D1FF]">Privacy Policy</a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+      <div class="mt-6 md:mt-8 pt-6 md:pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 text-xs md:text-sm">&copy; 2025 CreatorsBusiness. All Rights Reserved.</p>
+        <div class="flex space-x-3 md:space-x-4 mt-3 md:mt-0">
+          <a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="send" class="w-5 h-5"></i><span class="sr-only">Telegram</span></a>
+          <a href="#" class="text-gray-400 hover:text-[#00D1FF]"><i data-lucide="message-circle" class="w-5 h-5"></i><span class="sr-only">WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        lucide.createIcons();
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
-    </script>
+  <script>
+    lucide.createIcons();
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
